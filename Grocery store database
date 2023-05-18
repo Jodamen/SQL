@@ -1,0 +1,21 @@
+CREATE TABLE store(id INTEGER PRIMARY key, item TEXT, price INTEGER, aisle INTEGER,weight INTEGER);
+
+INSERT into store VALUES(1,"Bike",200,6,30),
+(2,"chair",40,6,20),
+(3,"apple",20,4,3),
+(4,"brush",4,8,1),
+(5,"scissors",6,2,1),
+(6,"phone charger",30,33,5),
+(7,"Laptop",2000,33,8),
+(8,"chair cushion",12,6,2),
+(9,"apple watch",250,33,1),
+(10,"knife",40,9,20),
+(11,"book",20,11,1),
+(12,"skateboard",50,31,20),
+(13,"x controller",60,33,3),
+(14," honney apple",20,4,3),
+(15,"bat",40,9,7),
+(16,"banana",3,4,2);
+
+--selecting from all where price is over 21 and ordering in descending order.
+SELECT * FROM store WHERE price > 21 ORDER BY price DESC;
