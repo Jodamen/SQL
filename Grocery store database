@@ -1,5 +1,5 @@
 CREATE TABLE store(id INTEGER PRIMARY key, item TEXT, price INTEGER, aisle INTEGER,weight INTEGER);
-
+ 
 INSERT into store VALUES(1,"Bike",200,6,30),
 (2,"chair",40,6,20),
 (3,"apple",20,4,3),
