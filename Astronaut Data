@@ -378,6 +378,5 @@ INSERT INTO astronauts(Name,Year,GroupNum,Status,Birth_Date,Birth_Place,Gender,A
 Select Name,Space_Flights,Space_Walks_hr from astronauts order by Space_Flights;
 Select Name,Max(Space_Flights),Space_Walks_hr from astronauts;
 Select Name,Space_Flights,Max(Space_Walks_hr) from astronauts;
-Select Name,Min(Space_Flights),Space_Walks_hr from astronauts;
-Select Name,Space_Flights,Min(Space_Walks_hr) from astronauts;
-
+Select Name,Space_Flights,Space_Walks_hr from astronauts where Space_flights = 0;
+Select Name,Space_Flights,Space_Walks_hr from astronauts where Space_flights > 0  order by Space_Flights;
